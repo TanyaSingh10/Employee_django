@@ -1,0 +1,25 @@
+employee_project/
+├── manage.py
+├── venv/                      
+├── db.sqlite3 or MSSQL        #I used sqlite because for this databases in settings.py does not need to be modified, it's easier.
+│
+├── mysite/                    # Project settings
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py                # Main URL router
+│   ├── wsgi.py
+│   └── asgi.py
+│
+├── employee/                  # My Django app
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── views.py               # Contains home, add, delete views
+│   ├── urls.py                # App-specific URL routes
+│   ├── migrations/
+│   │   └── __init__.py
+│   └── templates/
+│       └── employee/
+│           ├── list.html      # Employee list page
+│           └── add.html       # Add employees form
