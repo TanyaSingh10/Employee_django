@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employees</title>
+</head>
+<body>
+    <h1>Employee List</h1>
+    <a href="{% url 'add_employee' %}">Add Employee</a>
+    <ul>
+        {% for emp in employees %}
+            <li>{{ emp.name }} | {{ emp.department }} | {{ emp.email }} | ₹{{ emp.salary }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
